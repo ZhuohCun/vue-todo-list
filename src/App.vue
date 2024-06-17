@@ -1,30 +1,18 @@
 <script setup lang="ts">
 import {ref} from "vue";
-let todoText = ref('')
-let taskList=ref([
-  {
-    id:1,
-    text:'Task 1',
-    isDone:false
-  },
-  {
-    id:2,
-    text:'Task 2',
-    isDone:true
-  },{
-    id:3,
-    text:'Task 3',
-    isDone:false
-  }]);
+let todoText = ref('')  //'reactive' can also create reactive objects
+let taskList=ref<{id:number,text:String,isDone:boolean}[]>([]);
+taskList.value=JSON.parse(window.localStorage.getItem('taskList')??"[]"); //anti-stringify pattern:a??b meaning that if a is empty,the output string will be replaced with b
 function onAddTask(){
   taskList.value.push(
       {
-        id:taskList.value.length+1,
+        id:taskList.value.length+1,  //repetitive issues remain
         text: todoText.value,
         isDone: false
       }
   );
   todoText.value='';
+  window.localStorage.setItem('taskList',JSON.stringify(taskList.value)); //key - value(stringify)
 }
 </script>
 

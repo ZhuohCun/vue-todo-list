@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       element-plus:
-        specifier: ^2.7.3
-        version: 2.7.3(vue@3.4.27(typescript@5.4.5))
+        specifier: ^2.7.4
+        version: 2.7.4(vue@3.4.27(typescript@5.4.5))
       vue:
         specifier: ^3.4.21
         version: 3.4.27(typescript@5.4.5)
@@ -413,8 +413,8 @@ packages:
   de-indent@1.0.2:
     resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
 
-  element-plus@2.7.3:
-    resolution: {integrity: sha512-OaqY1kQ2xzNyRFyge3fzM7jqMwux+464RBEqd+ybRV9xPiGxtgnj/sVK4iEbnKnzQIa9XK03DOIFzoToUhu1DA==}
+  element-plus@2.7.4:
+    resolution: {integrity: sha512-ADBN3zHdhg8R9m6IXR2B5txSWvCn1+nAD+aA9kaJ4rZHMr37DVX6EOdwUjqAMPKz2xC0tculgkJ5rh5zVNiDNQ==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -915,7 +915,7 @@ snapshots:
 
   de-indent@1.0.2: {}
 
-  element-plus@2.7.3(vue@3.4.27(typescript@5.4.5)):
+  element-plus@2.7.4(vue@3.4.27(typescript@5.4.5)):
     dependencies:
       '@ctrl/tinycolor': 3.6.1
       '@element-plus/icons-vue': 2.3.1(vue@3.4.27(typescript@5.4.5))
